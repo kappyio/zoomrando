@@ -7,8 +7,11 @@ import math
 # Limit to n participants (300)
 # Make into a web page people can go to to use
 
+# BUGS
+# Nice if everything is three digits. But what about screens of 10 or more?
 
-participants = 146
+
+participants = 300
 rows = 5
 cols = 4
 screens = (math.ceil(participants / (rows * cols)))
@@ -16,7 +19,6 @@ screens = (math.ceil(participants / (rows * cols)))
 # r_participants = input("How many partcipants are there? ")
 # r_row = input("How many rows are there? ")
 # r_col = input("How many columns are there? ")
-# my_set = set()
 my_list = list()
 
 print("There are {0} participants spreade across {1} screens with {2} rows and {3} columns.".format(participants, screens, rows, cols))
@@ -38,4 +40,9 @@ while len(my_list) < participants:
 # print(my_list)
 
 for num in my_list:
-    print("Screen: {0}, Row: {1}, Column: {2}".format(str(num)[0], str(num)[1], str(num)[2]))
+    if num > 999:
+        print("{0} It's a big number!".format(num))
+        print(str(num)[0][1])
+        # print("Screen: {0}, Row: {1}, Column: {2}".format(str(num)[0][1], str(num)[2], str(num)[3]))
+    else:
+        print("Screen: {0}, Row: {1}, Column: {2}".format(str(num)[0], str(num)[1], str(num)[2]))

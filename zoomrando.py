@@ -16,6 +16,7 @@ parser.add_argument('rows', type=int, help="How many rows do you see in gallery 
 parser.add_argument('cols', type=int, help="How many columns do you see in gallery view?")
 args = parser.parse_args()
 
+
 def grid_calc(participants, rows, cols):
     my_list = list()
     screens = (math.ceil(participants / (rows * cols)))
@@ -29,11 +30,13 @@ def grid_calc(participants, rows, cols):
         else:
             my_list.append(my_digits)
 
+    print("There are {0} participants across {1} screens, {2} rows, and {3} columns".format(len(my_list), screens, rows, cols))
+
     return my_list
+
 
 if __name__ == '__main__':
     l = grid_calc(args.participants, args.rows, args.cols)
-    # print("There are {0} participants across {1} screens, {2} rows, and {3} columns".format(len(l)), "placeholder1", "placeholder2", "placeholder3")
     for num in l:
         if len(str(num)) > 3:
             print("Screen: {0}, Row: {1}, Column: {2}".format(str(num)[:2],

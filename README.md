@@ -15,9 +15,7 @@ seims.
 </p>
 
 <p>
-Also note: If you have a meeting with 25 people and you're in gallery view, there should be 
-1 screen with 5 rows and 5 columns = 25 people. But if a 26th person joins, you'll have two 
-screen with 25 people in each screen. 
+Also note: If you have a meeting with 25 people and you're in gallery view, there should be 1 screen with 5 rows and 5 columns = 25 people. But if a 26th person joins, you'll have two screen with 25 people in each screen. 
 </p>
 
 <p>
@@ -25,9 +23,7 @@ How's that?
 </p>
 
 <p>
-Zoom shifts attendees around in such a way that in grid view there will always be 25 participants.
-So no attendee has a fixed place on the grid. Thus you might get repeats, even with random number 
-generators if you use this grid system.
+Zoom shifts attendees around in such a way that in grid view there will always be 25 participants.  So no attendee has a fixed place on the grid. Thus you might get repeats, even with random number generators if you use this grid system.
 </p>
 
 <p>

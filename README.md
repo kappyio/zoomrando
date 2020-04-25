@@ -2,7 +2,7 @@
 Random Zoom grid position based on participants, screens, rows, columns
 
 <p>There are probably a million better ways to do this, especially if you have an
-account with API access that would allow you to access the attendees
+account with API access that would allow you to access the participants
 programmatically. But if you don't have programmatic access to a meeting, this
 is one way to pick a random participant using Zoom's "Gallery View", which
 presents you with a grid of participants Brady Bunch or Hollywood Squares
@@ -23,7 +23,7 @@ How's that?
 </p>
 
 <p>
-Zoom shifts attendees around in such a way that in grid view there will always be 25 participants.  So no attendee has a fixed place on the grid. Thus you might get repeats, even with random number generators if you use this grid system.
+Zoom shifts participants around in such a way that in grid view there will always be 25 participants.  So no participant has a fixed place on the grid. Thus you might get repeats, even with random number generators if you use this grid system.
 </p>
 
 <p>
@@ -49,7 +49,10 @@ Get help / usage info:
     optional arguments:
       -h, --help    show this help message and exit
 
-Example Run: 
+<p>
+Example Run. Imagine you're in a meeting with 146 participants. You're in grid
+view and you see 5 rows and 5 columns. Here's how you'd generate a random list
+of participants:</p>
 
     ./zoomrando.py 146 5 5
     There are 146 participants across 6 screens, 5 rows, and 5 columns
@@ -62,3 +65,6 @@ Example Run:
     Screen: 4, Row: 5, Column: 1
     Screen: 2, Row: 5, Column: 3
     ... etc. etc.
+
+Go to screen 2, row 5, and column 5 and that's your first rando. Rinse and
+repeat. Hilarity ensues.

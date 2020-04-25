@@ -52,20 +52,19 @@ Get help / usage info:
 
 <p>
 Example Run. Imagine you're in a meeting with 146 participants. You're in grid
-view and you see 5 rows and 5 columns. Here's how you'd generate a random list
+view and you see 5 rows and 4 columns. Here's how you'd generate a random list
 of participants:</p>
 
-    ./zoomrando.py 146 5 5
-    There are 146 participants across 6 screens, 5 rows, and 5 columns
-    Screen: 2, Row: 5, Column: 5
-    Screen: 2, Row: 1, Column: 5
-    Screen: 3, Row: 5, Column: 2
-    Screen: 4, Row: 3, Column: 2
-    Screen: 5, Row: 4, Column: 4
-    Screen: 2, Row: 4, Column: 1
-    Screen: 4, Row: 5, Column: 1
-    Screen: 2, Row: 5, Column: 3
-    ... etc. etc.
+    ./zoomrando.py 146 5 4
+    There are 146 participants across 8 screens, 5 rows, and 4 columns
+    Screen: 5, Row: 5, Column: 3
+    Screen: 7, Row: 2, Column: 2
+    Screen: 6, Row: 5, Column: 4
+    Screen: 8, Row: 5, Column: 2
+    Screen: 1, Row: 3, Column: 4
+    Screen: 8, Row: 2, Column: 1
+    Screen: 1, Row: 3, Column: 1
+    ... etc., etc.
 
-Go to screen 2, row 5, and column 5 and that's your first rando. Rinse and
-repeat. Hilarity ensues.
+Go to screen 5, row 5, and column 3 and the participant in that square is your first rando. 
+Rinse and repeat. Hilarity will ensue.

@@ -1,5 +1,6 @@
 # zoomrando
-Random Zoom grid position based on participants, screens, rows, columns
+Random Zoom grid position based on participants, screens, rows, columns.
+Currently runs on the command line. Written in Python 3.
 
 <p>There are probably a million better ways to do this, especially if you have an
 account with API access that would allow you to access the participants

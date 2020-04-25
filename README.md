@@ -1,6 +1,8 @@
 # zoomrando
 Random Zoom grid position based on participants, screens, rows, columns
 
+Get help / usage info: 
+
     ./zoomrando.py -h
     usage: zoomrando.py [-h] participants rows cols
     
@@ -14,3 +16,17 @@ Random Zoom grid position based on participants, screens, rows, columns
     
     optional arguments:
       -h, --help    show this help message and exit
+
+Example Run: 
+
+    ./zoomrando.py 146 5 5
+    There are 146 participants across 6 screens, 5 rows, and 5 columns
+    Screen: 2, Row: 5, Column: 5
+    Screen: 2, Row: 1, Column: 5
+    Screen: 3, Row: 5, Column: 2
+    Screen: 4, Row: 3, Column: 2
+    Screen: 5, Row: 4, Column: 4
+    Screen: 2, Row: 4, Column: 1
+    Screen: 4, Row: 5, Column: 1
+    Screen: 2, Row: 5, Column: 3
+    ... etc. etc.

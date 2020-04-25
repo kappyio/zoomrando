@@ -20,7 +20,7 @@ Also note: If you have a meeting with 25 people and you're in gallery view, ther
 </p>
 
 <p>
-How's that? 
+Huh? 
 </p>
 
 <p>
@@ -31,7 +31,7 @@ Zoom shifts participants around in such a way that in grid view there will alway
 Maybe I can write a plugin to do this, since I don't know if they'd bother with
 a feature request to pick a random participant. This is something quick and dirty I
 wrote to help me with an upcoming meeting.
-/<p>
+<p>
 
 
 Get help / usage info: 

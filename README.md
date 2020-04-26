@@ -12,7 +12,7 @@ style.
 
 <p>
 Note: Generally there are always 5 rows in column view. Columns can vary, it
-seims. 
+seems. 
 </p>
 
 <p>
@@ -37,7 +37,7 @@ wrote to help me with an upcoming meeting.
 Get help / usage info: 
 
     ./zoomrando.py -h
-    usage: zoomrando.py [-h] participants rows cols
+    usage: zoomrando.py [-h] [-n N] participants rows cols
     
     Produce a list of random grid coordinates for participants in a zoom meeting.
     Uses Zoom's "Gallery View".
@@ -49,7 +49,9 @@ Get help / usage info:
     
     optional arguments:
       -h, --help    show this help message and exit
-
+      -n N          How many results would you like? Default is all (#Not yet
+                                                                     working)
+  
 <p>
 Example Run. Imagine you're in a meeting with 146 participants. You're in grid
 view and you see 5 rows and 4 columns. Here's how you'd generate a random list

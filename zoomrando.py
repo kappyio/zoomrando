@@ -18,8 +18,8 @@ parser.add_argument('rows', type=int, help="How many rows do you see \
     in gallery view?")
 parser.add_argument('cols', type=int, help="How many columns do you \
     see in gallery view?")
-parser.add_argument('-n', type=int, help="How many results would you \
-    like?  Default is all")
+parser.add_argument('-n', '--num', type=int, help="How many results would you \
+    like returned?  Default behavior is to return all results")
 args = parser.parse_args()
 
 
@@ -40,7 +40,10 @@ def grid_calc(participants, rows, cols):
         "There are {0} participants across {1} screens, {2} rows, and {3} columns"
         .format(len(my_list), screens, rows, cols))
 
-    return my_list
+    if args.num:
+        return my_list[:args.num]
+    else:
+        return my_list
 
 
 if __name__ == '__main__':

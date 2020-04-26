@@ -37,21 +37,22 @@ wrote to help me with an upcoming meeting.
 Get help / usage info: 
 
     ./zoomrando.py -h
-    usage: zoomrando.py [-h] [-n N] participants rows cols
-    
+
+    usage: zoomrando.py [-h] [-n NUM] participants rows cols
+
     Produce a list of random grid coordinates for participants in a zoom meeting.
     Uses Zoom's "Gallery View".
     
     positional arguments:
-      participants  How many participants are in the meeting?
-      rows          How many rows do you see in gallery view?
-      cols          How many columns do you see in gallery view?
+      participants       How many participants are in the meeting?
+      rows               How many rows do you see in gallery view?
+      cols               How many columns do you see in gallery view?
     
     optional arguments:
-      -h, --help    show this help message and exit
-      -n N          How many results would you like? Default is all (#Not yet
-                                                                     working)
-  
+      -h, --help         show this help message and exit
+      -n NUM, --num NUM  How many results would you like returned? Default
+                     behavior is to return all results
+
 <p>
 Example Run. Imagine you're in a meeting with 146 participants. You're in grid
 view and you see 5 rows and 4 columns. Here's how you'd generate a random list
@@ -70,3 +71,11 @@ of participants:</p>
 
 Go to screen 5, row 5, and column 3 and the participant in that square is your first rando. 
 Rinse and repeat. Hilarity will ensue.
+
+<p>
+Just give me 1 random participant
+
+    ./zoomrando.py -n 1 146 5 4
+    There are 146 participants across 8 screens, 5 rows, and 4 columns
+    Screen: 1, Row: 3, Column: 1
+</p>

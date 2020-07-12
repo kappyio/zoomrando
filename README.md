@@ -10,6 +10,7 @@ presents you with a grid of participants Brady Bunch or Hollywood Squares
 style.
 </p>
 
+<h1>How to use:</h1>
 <p>If you'd like to use this, you have to download zoomrando.py. It requires
 you to have Python3 installed on your computer as well. You can then use a terminal application, like "Terminal" in
 MacOS to run the zoomrando.py program as shown in the example below.</p>

@@ -2,6 +2,12 @@
 Random Zoom grid position based on participants, screens, rows, columns.
 Currently runs on the command line. Written in Python 3.
 
+<h1>How to use:</h1>
+<p>If you'd like to use this, you have to download zoomrando.py. It requires
+you to <a href="https://docs.python-guide.org/starting/install3/osx/">have Python3 installed on your computer</a> as well. You can then use a terminal application, like "Terminal" in
+MacOS to <a
+href="https://smallbusiness.chron.com/execute-file-macbook-terminal-49381.html">run the zoomrando.py program</a> as shown in the example below.</p>
+
 <p>There are probably a million better ways to do this, especially if you have an
 account with API access that would allow you to access the participants
 programmatically. But if you don't have programmatic access to a meeting, this
@@ -10,10 +16,6 @@ presents you with a grid of participants Brady Bunch or Hollywood Squares
 style.
 </p>
 
-<h1>How to use:</h1>
-<p>If you'd like to use this, you have to download zoomrando.py. It requires
-you to have Python3 installed on your computer as well. You can then use a terminal application, like "Terminal" in
-MacOS to run the zoomrando.py program as shown in the example below.</p>
 
 <p>
 Note: Generally there are always 5 rows in column view. Columns can vary, it
